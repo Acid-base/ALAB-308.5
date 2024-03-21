@@ -19,7 +19,19 @@ function average(numbers) {
 
   return total / numbers.length;
 }
-//function findlongest(strings) {}
+console.log("Average of [1, 2, 3, 4, 5]:", average([1, 2, 3, 4, 5]));
+
+function findLongest(strings) {
+  let longestString = strings[0]; // Initialize longestString with the first element
+  for (let i = 1; i < strings.length; i++) {
+    if (strings[i].length > longestString.length) {
+      longestString = strings[i]; // Update longestString if the current string is longer
+    }
+  }
+
+  return longestString;
+}
+console.log("Longest string in array:", findLongest(["red", "green", "blue"]));
 //function filterif(strings, length) {}
 //function print(n) {}
 //function sortage(data) {}
